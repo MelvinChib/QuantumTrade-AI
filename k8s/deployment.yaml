@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ai-agent-system
+  name: ai-powered-market-intelligence
   labels:
-    app: ai-agent-system
+    app: ai-powered-market-intelligence
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: ai-agent-system
+      app: ai-powered-market-intelligence
   template:
     metadata:
       labels:
-        app: ai-agent-system
+        app: ai-powered-market-intelligence
     spec:
       containers:
       - name: ai-agent-system
-        image: ai-agent-system:1.0.0
+        image: ai-powered-market-intelligence:1.0.0
         ports:
         - containerPort: 8080
         env:
@@ -84,10 +84,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: ai-agent-system-service
+  name: ai-powered-market-intelligence-service
 spec:
   selector:
-    app: ai-agent-system
+    app: ai-powered-market-intelligence
   ports:
   - protocol: TCP
     port: 80
@@ -97,19 +97,19 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ai-agent-system-ingress
+  name: ai-powered-market-intelligence-ingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
     nginx.ingress.kubernetes.io/rate-limit: "100"
 spec:
   rules:
-  - host: ai-agent-system.local
+  - host: ai-powered-market-intelligence.local
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: ai-agent-system-service
+            name: ai-powered-market-intelligence-service
             port:
               number: 80

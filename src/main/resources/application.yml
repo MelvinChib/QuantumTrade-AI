@@ -7,7 +7,7 @@ server:
 
 spring:
   application:
-    name: ai-agent-system
+    name: ai-powered-market-intelligence
   
   main:
     allow-bean-definition-overriding: true
@@ -120,8 +120,8 @@ springdoc:
     path: /swagger-ui.html
     operations-sorter: method
   info:
-    title: AI Agent System API
-    description: Enterprise-grade multi-agent AI system for financial market analysis
+    title: AI-Powered Market Intelligence API
+    description: Enterprise-grade AI-powered market intelligence system for financial analysis
     version: 1.0.0
     contact:
       name: AI Agent System Team

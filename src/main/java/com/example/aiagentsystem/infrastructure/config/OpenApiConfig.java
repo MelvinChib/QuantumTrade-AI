@@ -17,8 +17,8 @@ public class OpenApiConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("AI Agent System API")
-                        .description("Enterprise-grade multi-agent AI system for financial market analysis")
+                        .title("AI-Powered Market Intelligence API")
+                        .description("Enterprise-grade AI-powered market intelligence system for financial analysis")
                         .version("2.0.0")
                         .contact(new Contact()
                                 .name("AI Agent System Team")

@@ -12,9 +12,11 @@
     </parent>
 
     <groupId>com.example</groupId>
-    <artifactId>ai-agent-system</artifactId>
+    <artifactId>ai-powered-market-intelligence</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
+    <name>AI-Powered Market Intelligence</name>
+    <description>Enterprise-grade AI-powered market intelligence system for financial analysis</description>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -222,7 +224,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <image>
-                        <name>ai-agent-system:${project.version}</name>
+                        <name>ai-powered-market-intelligence:${project.version}</name>
                     </image>
                 </configuration>
             </plugin>
@@ -250,7 +252,7 @@
                 <artifactId>dockerfile-maven-plugin</artifactId>
                 <version>1.4.13</version>
                 <configuration>
-                    <repository>ai-agent-system</repository>
+                    <repository>ai-powered-market-intelligence</repository>
                     <tag>${project.version}</tag>
                 </configuration>
             </plugin>

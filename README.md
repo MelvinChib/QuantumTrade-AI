@@ -1,7 +1,7 @@
-# Enterprise Multi-Agent AI System for Financial Market Analysis
+# AI-Powered Market Intelligence
 
 ## Overview
-**Production-ready** Spring Boot WebFlux backend for a real-time multi-agent AI system designed for financial market analysis. Built with enterprise-grade architecture including monitoring, observability, resilience patterns, and comprehensive security.
+**Production-ready** enterprise-grade AI-powered market intelligence system for real-time financial market analysis. Built with Spring Boot WebFlux and comprehensive enterprise architecture including monitoring, observability, resilience patterns, and security.
 
 ## 🏢 Enterprise Features
 
